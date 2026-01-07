@@ -43,10 +43,13 @@
       autoRepeatInterval = 35;
       # windowManager.qtile.enable = true;
   };
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
+
+  programs.wofi.enable = true;
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
