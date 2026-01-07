@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "venator"; # Define your hostname.
+  networking.hostName = "tribunal"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
@@ -36,12 +36,16 @@
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-  services.displayManager.ly.enable = true;
+  # services.displayManager.ly.enable = true;
   services.xserver = {
       enable = true;
       autoRepeatDelay = 200;
       autoRepeatInterval = 35;
-      windowManager.qtile.enable = true;
+      # windowManager.qtile.enable = true;
+  };
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
 
   # Configure keymap in X11
