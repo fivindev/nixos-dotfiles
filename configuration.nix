@@ -87,6 +87,7 @@
     wget
     alacritty
     git
+    wofi
   ];
 
   fonts.packages = with pkgs; [
